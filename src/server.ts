@@ -1,11 +1,5 @@
-import fastify from 'fastify'
+import { app } from './app'
 import { env } from './env'
-
-const app = fastify()
-
-app.addHook('preHandler', async (request, reply) => {
-  console.log(`[${request.method}] ${request.url}`)
-})
 
 app
   .listen({
