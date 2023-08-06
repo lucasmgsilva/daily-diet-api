@@ -1,5 +1,8 @@
+// import knexpkg from 'knex'
 import { knex as setupKnex, Knex } from 'knex'
 import { env } from './env'
+
+// const { knex: setupKnex, Knex } = knexpkg
 
 export const config: Knex.Config = {
   client: env.DATABASE_CLIENT,
